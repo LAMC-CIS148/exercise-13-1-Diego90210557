@@ -17,6 +17,11 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+#adjustment{
+	label-float:none;
+	radio-width:auto;
+	radio-margin-left:3ems;
+}
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
@@ -47,12 +52,14 @@ header img {
 }
 /* the styles for the form */
 fieldset {
-    margin-top: 1em;
     margin-bottom: 1em;
     padding-top: .5em;
+    padding-bottom:.5em
+    padding-right: 1em;
+    padding-left:1em;
 }
 legend {
-    color: #931420;
+    color: #000000
     font-weight: bold;
     font-size: 85%;
     margin-bottom: .5em;
@@ -71,13 +78,14 @@ input, select {
     margin-bottom: .5em;
 }
 input:required, input[required] {
-	border: 3px solid red;
+	border: 2px solid #800000;
 }
 input:valid {
 	border: 1px solid black;
 }
 input:invalid {
 	box-shadow: none;
+	border:2px solid #800000;
 }
 br {
     clear: both;
